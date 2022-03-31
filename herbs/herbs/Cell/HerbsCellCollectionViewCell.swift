@@ -30,8 +30,8 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
     
     lazy var nameLabel: UILabel! = {
         let label = UILabel()
-        label.text = "FLOR DE MAGNÓLIA JAPONESA"
         label.font = UIFont.ActorRegular(size: 18)
+        label.text = label.text?.uppercased()
         label.numberOfLines = 0
         label.textAlignment = .center
         return label
@@ -39,8 +39,8 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
     
     lazy var propertiesLabel: UILabel! = {
         let label = UILabel()
-        label.text = "LEVEMENTE AMARGO, DOCE, AMORNANTE E TÓXICO"
         label.font = UIFont.AdventProREgular(size: 17)
+        label.text = label.text?.uppercased()
         label.numberOfLines = 0
         label.textAlignment = .right
         return label
@@ -48,7 +48,6 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
     
     lazy var dosesLabel: UILabel! = {
         let label = UILabel()
-        label.text = "3 a 6g em decocção, 500 a 1500mg, até 120 gotas"
         label.font = UIFont.AdventProREgular(size: 16)
         label.numberOfLines = 0
         label.textAlignment = .right

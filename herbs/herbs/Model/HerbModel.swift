@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct HerbModel {
+struct Herbs: Codable {
+    let herbs: [HerbModel]
+}
+
+struct HerbModel: Codable {
     let name: String
     let scientificName: String
     let properties: String
