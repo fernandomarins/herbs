@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HerbsCellCollectionViewCell: UICollectionViewCell {
     
@@ -29,16 +30,28 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
     
     lazy var nameLabel: UILabel! = {
         let label = UILabel()
+        label.text = "FLOR DE MAGNÓLIA JAPONESA"
+        label.font = UIFont.ActorRegular(size: 18)
+        label.numberOfLines = 0
+        label.textAlignment = .center
         return label
     }()
     
     lazy var propertiesLabel: UILabel! = {
         let label = UILabel()
+        label.text = "LEVEMENTE AMARGO, DOCE, AMORNANTE E TÓXICO"
+        label.font = UIFont.AdventProREgular(size: 17)
+        label.numberOfLines = 0
+        label.textAlignment = .right
         return label
     }()
     
     lazy var dosesLabel: UILabel! = {
         let label = UILabel()
+        label.text = "3 a 6g em decocção, 500 a 1500mg, até 120 gotas"
+        label.font = UIFont.AdventProREgular(size: 16)
+        label.numberOfLines = 0
+        label.textAlignment = .right
         return label
     }()
     
@@ -50,6 +63,7 @@ extension HerbsCellCollectionViewCell {
         buildViewHierarchy()
         setupContraints()
         setupAditionalConfiguration()
+        dropShadow()
     }
     
     func buildViewHierarchy() {
@@ -66,48 +80,35 @@ extension HerbsCellCollectionViewCell {
             $0.height.equalTo(88)
             $0.width.equalTo(122)
         }
-//        contentView.snp.makeConstraints {
-//            $0.top.equalToSuperview()
-//            $0.left.equalToSuperview()
-//            $0.bottom.equalToSuperview()
-//            $0.right.equalToSuperview()
-//        }
-//
-//        titleLabel.snp.makeConstraints {
-//            $0.top.equalTo(contentView.snp.top).offset(50)
-//            $0.centerX.equalToSuperview()
-//        }
-//
-//        subTitleLabel.snp.makeConstraints {
-//            $0.top.equalTo(titleLabel.snp.bottom).offset(5)
-//            $0.centerX.equalToSuperview()
-//            $0.left.equalTo(contentView.snp.left).offset(20)
-//            $0.right.equalTo(contentView.snp.right).offset(-20)
-//        }
-//
-//        searchButton.snp.makeConstraints {
-//            $0.right.equalTo(contentView.snp.right).offset(-16)
-//            $0.centerY.equalTo(subTitleLabel.snp.centerY)
-//            $0.height.equalTo(50)
-//            $0.width.equalTo(50)
-//        }
-//
-//        mainContentView.snp.makeConstraints {
-//            $0.top.equalTo(subTitleLabel.snp.bottom).offset(16)
-//            $0.left.equalToSuperview()
-//            $0.bottom.equalToSuperview()
-//            $0.right.equalToSuperview()
-//        }
-//
-//        collectionView.snp.makeConstraints {
-//            $0.top.equalTo(mainContentView.snp.top).offset(16)
-//            $0.left.equalTo(mainContentView.snp.left).offset(16)
-//            $0.bottom.equalTo(mainContentView.snp.bottom).offset(-16)
-//            $0.right.equalTo(mainContentView.snp.right).offset(-16)
-//        }
+        
+        nameLabel.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.centerX.equalToSuperview()
+            $0.right.equalToSuperview().offset(-16)
+            $0.left.equalToSuperview().offset(16)
+        }
+        
+        propertiesLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(16)
+            $0.right.equalToSuperview().offset(-16)
+            $0.left.equalTo(nameView.snp.right).offset(16)
+        }
+        
+        dosesLabel.snp.makeConstraints {
+            $0.bottom.equalToSuperview().offset(-16)
+            $0.right.equalToSuperview().offset(-16)
+            $0.left.equalTo(nameView.snp.right).offset(16)
+        }
     }
     
     func setupAditionalConfiguration() {
+        contentView.layer.cornerRadius = 15
         contentView.backgroundColor = UIColor.init(red: 202/255, green: 243/255, blue: 211/255, alpha: 1.0)
+    }
+    
+    func dropShadow() {
+        contentView.layer.shadowOpacity = 0.1
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 8)
+        contentView.layer.shadowRadius = 10
     }
 }

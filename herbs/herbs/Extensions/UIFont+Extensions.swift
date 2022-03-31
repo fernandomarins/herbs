@@ -15,4 +15,8 @@ extension UIFont {
     static func ActorRegular(size: CGFloat) -> UIFont {
         return UIFont(name: "Actor-Regular", size: size)!
     }
+    
+    static func AdventProREgular(size: CGFloat) -> UIFont {
+        return UIFont(name: "AdventPro-Regular", size: size)!
+    }
 }
