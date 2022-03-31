@@ -19,6 +19,7 @@
 		557F7D6C27F5E15F00A4FFA0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F7D6B27F5E15F00A4FFA0 /* MainView.swift */; };
 		557F7D7027F5E6E300A4FFA0 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 557F7D6F27F5E6D300A4FFA0 /* Montserrat-Black.ttf */; };
 		557F7D7327F5E9CE00A4FFA0 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F7D7227F5E9CE00A4FFA0 /* UIFont+Extensions.swift */; };
+		55B5DE7E27F65153005CE137 /* ClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5DE7D27F65153005CE137 /* ClientAPI.swift */; };
 		55C840CF27F5F91B00DB8E67 /* AdventPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55C840CE27F5F91800DB8E67 /* AdventPro-Regular.ttf */; };
 		55C840D127F5F9F800DB8E67 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 55C840D027F5F9F800DB8E67 /* example.json */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		557F7D6F27F5E6D300A4FFA0 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		557F7D7227F5E9CE00A4FFA0 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		557F7D7427F5EB0500A4FFA0 /* Actor-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Actor-Regular.ttf"; sourceTree = "<group>"; };
+		55B5DE7D27F65153005CE137 /* ClientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAPI.swift; sourceTree = "<group>"; };
 		55C840CE27F5F91800DB8E67 /* AdventPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdventPro-Regular.ttf"; sourceTree = "<group>"; };
 		55C840D027F5F9F800DB8E67 /* example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		6C6075AC7886AFD09AFB8FC5 /* Pods-herbs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-herbs.release.xcconfig"; path = "Target Support Files/Pods-herbs/Pods-herbs.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		55C840D327F6018700DB8E67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55B5DE7D27F65153005CE137 /* ClientAPI.swift */,
 				5538171827F5F13500833334 /* HerbModel.swift */,
 			);
 			path = Model;
@@ -281,6 +284,7 @@
 				557F7D5C27F4DA9600A4FFA0 /* MainViewController.swift in Sources */,
 				557F7D6C27F5E15F00A4FFA0 /* MainView.swift in Sources */,
 				5538171D27F5F27700833334 /* HerbsCellCollectionViewCell.swift in Sources */,
+				55B5DE7E27F65153005CE137 /* ClientAPI.swift in Sources */,
 				557F7D5827F4DA9600A4FFA0 /* AppDelegate.swift in Sources */,
 				557F7D7327F5E9CE00A4FFA0 /* UIFont+Extensions.swift in Sources */,
 				5538171927F5F13500833334 /* HerbModel.swift in Sources */,
