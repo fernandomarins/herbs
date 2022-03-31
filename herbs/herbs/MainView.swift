@@ -58,7 +58,10 @@ class MainView: UIView {
     }()
     
     lazy var collectionView: UICollectionView! = {
-        let collectionView = UICollectionView()
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width - 48, height: 120)
+        layout.minimumLineSpacing = 20
+        let collectionView = UICollectionView(frame: CGRect(), collectionViewLayout: layout)
         return collectionView
     }()
 }
@@ -76,6 +79,7 @@ extension MainView {
         contentView.addSubview(subTitle)
         contentView.addSubview(searchButton)
         contentView.addSubview(mainContentView)
+        mainContentView.addSubview(collectionView)
     }
     
     func setupContraints() {
@@ -110,6 +114,13 @@ extension MainView {
             $0.left.equalToSuperview()
             $0.bottom.equalToSuperview()
             $0.right.equalToSuperview()
+        }
+        
+        collectionView.snp.makeConstraints {
+            $0.top.equalTo(mainContentView.snp.top).offset(16)
+            $0.left.equalTo(mainContentView.snp.left).offset(16)
+            $0.bottom.equalTo(mainContentView.snp.bottom).offset(-16)
+            $0.right.equalTo(mainContentView.snp.right).offset(-16)
         }
     }
 }
