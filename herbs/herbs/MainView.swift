@@ -25,7 +25,7 @@ class MainView: UIView {
         return view
     }()
     
-    lazy var title: UILabel! = {
+    lazy var titleLabel: UILabel! = {
         let label = UILabel()
         label.text = "ervas"
         label.font = UIFont.MontSerratBlack(size: 64)
@@ -34,7 +34,7 @@ class MainView: UIView {
         return label
     }()
     
-    lazy var subTitle: UILabel! = {
+    lazy var subTitleLabel: UILabel! = {
         let label = UILabel()
         label.text = "herbário de medicina tradicional chinesa"
         label.font = UIFont.ActorRegular(size: 24)
@@ -75,8 +75,8 @@ extension MainView {
     
     func buildViewHierarchy() {
         addSubview(contentView)
-        contentView.addSubview(title)
-        contentView.addSubview(subTitle)
+        contentView.addSubview(titleLabel)
+        contentView.addSubview(subTitleLabel)
         contentView.addSubview(searchButton)
         contentView.addSubview(mainContentView)
         mainContentView.addSubview(collectionView)
@@ -90,13 +90,13 @@ extension MainView {
             $0.right.equalToSuperview()
         }
         
-        title.snp.makeConstraints {
+        titleLabel.snp.makeConstraints {
             $0.top.equalTo(contentView.snp.top).offset(50)
             $0.centerX.equalToSuperview()
         }
         
-        subTitle.snp.makeConstraints {
-            $0.top.equalTo(title.snp.bottom).offset(5)
+        subTitleLabel.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(5)
             $0.centerX.equalToSuperview()
             $0.left.equalTo(contentView.snp.left).offset(20)
             $0.right.equalTo(contentView.snp.right).offset(-20)
@@ -104,13 +104,13 @@ extension MainView {
         
         searchButton.snp.makeConstraints {
             $0.right.equalTo(contentView.snp.right).offset(-16)
-            $0.centerY.equalTo(subTitle.snp.centerY)
+            $0.centerY.equalTo(subTitleLabel.snp.centerY)
             $0.height.equalTo(50)
             $0.width.equalTo(50)
         }
         
         mainContentView.snp.makeConstraints {
-            $0.top.equalTo(subTitle.snp.bottom).offset(16)
+            $0.top.equalTo(subTitleLabel.snp.bottom).offset(16)
             $0.left.equalToSuperview()
             $0.bottom.equalToSuperview()
             $0.right.equalToSuperview()
@@ -119,7 +119,7 @@ extension MainView {
         collectionView.snp.makeConstraints {
             $0.top.equalTo(mainContentView.snp.top).offset(16)
             $0.left.equalTo(mainContentView.snp.left).offset(16)
-            $0.bottom.equalTo(mainContentView.snp.bottom).offset(-16)
+            $0.bottom.equalTo(mainContentView.snp.bottom).offset(-30)
             $0.right.equalTo(mainContentView.snp.right).offset(-16)
         }
     }

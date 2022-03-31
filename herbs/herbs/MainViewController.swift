@@ -15,6 +15,17 @@ class MainViewController: UIViewController {
         super.loadView()
         view = contentView
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupCollectionView()
+    }
+    
+    private func setupCollectionView() {
+        contentView.collectionView.register(HerbsCellCollectionViewCell.self, forCellWithReuseIdentifier: HerbsCellCollectionViewCell.cellIdentifier)
+        contentView.collectionView.delegate = self
+        contentView.collectionView.dataSource = self
+    }
 }
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -23,7 +34,8 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HerbsCellCollectionViewCell.cellIdentifier, for: indexPath) as! HerbsCellCollectionViewCell
+        
+        return cell
     }
-    
 }
