@@ -31,13 +31,15 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.fetchData { [weak self] herb in
-            self?.setData(herb: herb)
+            DispatchQueue.main.async {
+                self?.setData(herb: herb)
+            }
         }
     }
     
     private func setData(herb: HerbCellViewModel) {
-        contentView.titleLabel.text = herb.name
-        contentView.categoryLabel.text = herb.category
+        contentView.titleLabel.text = herb.name.uppercased()
+        contentView.categoryLabel.text = herb.category.uppercased()
         contentView.valueScientificNameLabel.text = herb.scientificName
         contentView.valuePropertiesLabel.text = herb.properties
         contentView.valueDosesLabel.text = herb.doses

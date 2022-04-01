@@ -12,6 +12,7 @@ class DetailsView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .white
         setupView()
     }
     
@@ -19,8 +20,15 @@ class DetailsView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    lazy var scrollView: UIScrollView! = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
+    
     lazy var contentView: UIView! = {
         let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = UIColor.init(red: 57/255, green: 195/255, blue: 154/255, alpha: 1.0)
         return view
     }()
@@ -39,7 +47,6 @@ class DetailsView: UIView {
     lazy var mainContentView: UIView! = {
         let view = UIView()
         view.backgroundColor = .white
-        view.layer.cornerRadius = 15
         return view
     }()
     
@@ -111,7 +118,7 @@ class DetailsView: UIView {
     
     lazy var contraIndicationLabel: UILabel! = {
         let label = UILabel()
-        label.text = "CONTRA-INDICAÇÃO"
+        label.text = "CONTRA-INDICAÇÃO:"
         label.font = UIFont.MontSerratBlack(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
@@ -143,7 +150,7 @@ class DetailsView: UIView {
         label.font = UIFont.MontSerratLight(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .left
         return label
     }()
     
@@ -162,7 +169,7 @@ class DetailsView: UIView {
         label.font = UIFont.MontSerratLight(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .left
         return label
     }()
 }
@@ -175,7 +182,8 @@ extension DetailsView {
     }
     
     func buildViewHierarchy() {
-        addSubview(contentView)
+        addSubview(scrollView)
+        scrollView.addSubview(contentView)
         contentView.addSubview(titleLabel)
         contentView.addSubview(mainContentView)
         mainContentView.addSubview(categoryLabel)
@@ -194,15 +202,23 @@ extension DetailsView {
     }
     
     func setupContraints() {
-        contentView.snp.makeConstraints {
+        scrollView.snp.makeConstraints {
             $0.top.equalToSuperview()
             $0.left.equalToSuperview()
             $0.bottom.equalToSuperview()
             $0.right.equalToSuperview()
         }
+        scrollView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 1.0).isActive = true
+        
+        contentView.snp.makeConstraints {
+            $0.top.equalTo(scrollView.snp.top)
+            $0.left.equalTo(scrollView.snp.left)
+            $0.bottom.equalTo(scrollView.snp.bottom)
+            $0.right.equalTo(scrollView.snp.right)
+        }
         
         titleLabel.snp.makeConstraints {
-            $0.top.equalTo(contentView.snp.top).offset(100)
+            $0.top.equalTo(contentView.snp.top).offset(16)
             $0.centerX.equalToSuperview()
             $0.left.equalTo(contentView.snp.left).offset(16)
             $0.right.equalTo(contentView.snp.right).offset(-16)
@@ -214,12 +230,88 @@ extension DetailsView {
             $0.bottom.equalToSuperview()
             $0.right.equalToSuperview()
         }
-        
+
         categoryLabel.snp.makeConstraints {
             $0.top.equalTo(mainContentView.snp.top).offset(16)
             $0.centerX.equalToSuperview()
             $0.left.equalTo(contentView.snp.left).offset(16)
             $0.right.equalTo(contentView.snp.right).offset(-16)
+        }
+
+        scientificNameLabel.snp.makeConstraints {
+            $0.top.equalTo(categoryLabel.snp.bottom).offset(36)
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.width.equalTo(161)
+        }
+
+        valueScientificNameLabel.snp.makeConstraints {
+            $0.top.equalTo(categoryLabel.snp.bottom).offset(36)
+            $0.left.equalTo(scientificNameLabel.snp.right).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
+        }
+
+        propertiesLabel.snp.makeConstraints {
+            $0.top.equalTo(scientificNameLabel.snp.bottom).offset(36)
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.width.equalTo(143)
+        }
+
+        valuePropertiesLabel.snp.makeConstraints {
+            $0.top.equalTo(scientificNameLabel.snp.bottom).offset(36)
+            $0.left.equalTo(propertiesLabel.snp.right).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
+        }
+
+        dosesLabel.snp.makeConstraints {
+            $0.top.equalTo(propertiesLabel.snp.bottom).offset(36)
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.width.equalTo(64)
+        }
+
+        valueDosesLabel.snp.makeConstraints {
+            $0.top.equalTo(propertiesLabel.snp.bottom).offset(36)
+            $0.left.equalTo(dosesLabel.snp.right).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
+        }
+
+        contraIndicationLabel.snp.makeConstraints {
+            $0.top.equalTo(dosesLabel.snp.bottom).offset(36)
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.width.equalTo(184)
+        }
+
+        valueContraIndicationLabel.snp.makeConstraints {
+            $0.top.equalTo(propertiesLabel.snp.bottom).offset(36)
+            $0.left.equalTo(contraIndicationLabel.snp.right).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
+        }
+
+        functionsTitle.snp.makeConstraints {
+            $0.top.equalTo(contraIndicationLabel.snp.bottom).offset(36)
+            $0.centerX.equalToSuperview()
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
+        }
+
+        functionsLabel.snp.makeConstraints {
+            $0.top.equalTo(functionsTitle.snp.bottom).offset(16)
+            $0.left.equalToSuperview().offset(16)
+            $0.right.equalToSuperview().offset(-16)
+        }
+
+        toxicityTitle.snp.makeConstraints {
+            $0.top.equalTo(functionsLabel.snp.bottom).offset(36)
+            $0.centerX.equalToSuperview()
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
+        }
+
+        toxicityLabel.snp.makeConstraints {
+            $0.top.equalTo(toxicityTitle.snp.bottom).offset(36)
+            $0.left.equalToSuperview().offset(16)
+            $0.bottom.equalTo(mainContentView.snp.bottom).offset(-36)
+            $0.right.equalToSuperview().offset(-16)
+
         }
     }
 }

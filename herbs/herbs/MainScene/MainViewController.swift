@@ -34,14 +34,10 @@ class MainViewController: UIViewController {
         setupCollectionView()
         viewModel.getData()
         viewModel.reloadedCollectionView = { [weak self] in
-            self?.contentView.collectionView.reloadData()
+            DispatchQueue.main.async {
+                self?.contentView.collectionView.reloadData()
+            }
         }
-        setupNavigationBar()
-    }
-    
-    private func setupNavigationBar() {
-        navigationItem.backButtonTitle = ""
-        navigationController?.navigationBar.tintColor = .white
     }
     
     // MARK: - Collection View
