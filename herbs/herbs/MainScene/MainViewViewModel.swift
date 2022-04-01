@@ -45,11 +45,12 @@ class MainViewViewModel {
         let functions = herb.functions
         let toxicity = herb.toxicity
         let contraIndication = herb.contraIndication
+        let category = herb.category
         
         return HerbCellViewModel(name: name, scientificName: scientificName,
                                  properties: properties, doses: doses, functions:
                                     functions, toxicity: toxicity,
-                                 contraIndication: contraIndication)
+                                 contraIndication: contraIndication, category: category)
     }
     
     func getCellViewModel(at indexPath: IndexPath) -> HerbCellViewModel {

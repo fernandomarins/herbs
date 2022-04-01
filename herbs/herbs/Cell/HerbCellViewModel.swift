@@ -15,4 +15,5 @@ struct HerbCellViewModel {
     let functions: String
     let toxicity: String?
     let contraIndication: String?
+    let category: String
 }
