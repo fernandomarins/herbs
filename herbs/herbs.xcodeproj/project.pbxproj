@@ -29,6 +29,7 @@
 		55E06F2327F722D800BC5909 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E06F2227F722D800BC5909 /* DetailsViewController.swift */; };
 		55E06F2627F7258E00BC5909 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E06F2527F7258E00BC5909 /* DetailsView.swift */; };
 		55E06F2827F7259400BC5909 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E06F2727F7259400BC5909 /* DetailsViewModel.swift */; };
+		55E06F2A27F727C400BC5909 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55E06F2927F727C000BC5909 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		55E06F2227F722D800BC5909 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		55E06F2527F7258E00BC5909 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		55E06F2727F7259400BC5909 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		55E06F2927F727C000BC5909 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				557F7D6F27F5E6D300A4FFA0 /* Montserrat-Black.ttf */,
+				55E06F2927F727C000BC5909 /* Montserrat-Regular.ttf */,
 				557F7D7427F5EB0500A4FFA0 /* Actor-Regular.ttf */,
 				55C840CE27F5F91800DB8E67 /* AdventPro-Regular.ttf */,
 			);
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E06F2A27F727C400BC5909 /* Montserrat-Regular.ttf in Resources */,
 				557F7D6427F4DA9800A4FFA0 /* LaunchScreen.storyboard in Resources */,
 				5538171727F5ECF400833334 /* Actor-Regular.ttf in Resources */,
 				557F7D6127F4DA9800A4FFA0 /* Assets.xcassets in Resources */,
