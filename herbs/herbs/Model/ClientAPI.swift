@@ -6,48 +6,27 @@
 //
 
 import Foundation
+import Firebase
+
+enum FirebaseError: Error {
+    case invalidDecoder
+}
 
 class ClientAPI {
     
-    enum Endpoints {
-        static let baseURL = ""
-        static let herbs = ""
-        
-        case get
-        
-        var stringValue: String {
-            switch self {
-            case .get:
-                return Endpoints.baseURL + Endpoints.herbs
-            }
-        }
-        
-        var url: URL {
-            return URL(string: stringValue)!
-        }
-    }
+    let rootRef = Database.database().reference()
+    let ref = Database.database().reference(withPath: "herbs")
     
-    class func taskForGetRequest<ResponseType: Decodable>(from url: URL,
-                                                          responseType: ResponseType.Type,
-                                                          completion: @escaping (ResponseType?, Error?) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data else {
-                completion(nil, error)
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let responseObj = try decoder.decode(ResponseType.self, from: data)
-                DispatchQueue.main.async {
-                    completion(responseObj, nil)
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    completion(nil, error)
+    func getData(completion: @escaping ([Herb]) -> Void) {
+        ref.observe(.value, with: { snapshot in
+            var items: [Herb] = []
+            for item in snapshot.children {
+                if let snapshot = item as? DataSnapshot,
+                let herb = Herb(snapshot: snapshot) {
+                    items.append(herb)
                 }
             }
-
-        }.resume()
+            completion(items)
+        })
     }
 }

@@ -10,8 +10,19 @@ import UIKit
 class MainViewController: UIViewController {
     
     var contentView = MainView(frame: UIScreen.main.bounds)
+
+    var viewModel = MainViewViewModel()
     
-    var herbs = [HerbModel]()
+    init(viewModel: MainViewViewModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    var herbs = [Herb]()
     
     override func loadView() {
         super.loadView()
@@ -21,23 +32,32 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-        let t = loadJson(filename: "example")
-        herbs = t!
+        viewModel.getData()
+//        viewModel.getData { herbs, error in
+//            guard let herbs = herbs else {
+//                return
+//            }
+//
+//
+//
+//        }
+//        let t = loadJson(filename: "example")
+//        herbs = t!
     }
     
-    func loadJson(filename fileName: String) -> [HerbModel]? {
-        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(Herbs.self, from: data)
-                return jsonData.herbs
-            } catch {
-                print("error:\(error)")
-            }
-        }
-        return nil
-    }
+//    func loadJson(filename fileName: String) -> [Herb]? {
+//        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+//            do {
+//                let data = try Data(contentsOf: url)
+//                let decoder = JSONDecoder()
+//                let jsonData = try decoder.decode(Herbs.self, from: data)
+//                return jsonData.herbs
+//            } catch {
+//                print("error:\(error)")
+//            }
+//        }
+//        return nil
+//    }
     
     private func setupCollectionView() {
         contentView.collectionView.register(HerbsCellCollectionViewCell.self,
