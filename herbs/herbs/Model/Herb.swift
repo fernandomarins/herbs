@@ -16,6 +16,7 @@ struct Herb {
     let functions: String
     let toxicity: String?
     let contraIndication: String?
+    let category: String
     
     init?(snapshot: DataSnapshot) {
         guard let value = snapshot.value as? [String: AnyObject],
@@ -25,7 +26,8 @@ struct Herb {
               let doses = value["doses"] as? String,
               let functions = value["functions"] as? String,
               let toxicity = value["toxicity"] as? String,
-              let contraIndication = value["contraIndication"] as? String
+              let contraIndication = value["contraIndication"] as? String,
+              let category = value["category"] as? String
         else {
             return nil
         }
@@ -38,6 +40,6 @@ struct Herb {
         self.functions = functions
         self.toxicity = toxicity
         self.contraIndication = contraIndication
-        
+        self.category = category
     }
 }
