@@ -52,6 +52,12 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         return viewModel.herbs.count
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailsViewController()
+        vc.herb = viewModel.getCell(at: indexPath)
+        show(vc, sender: self)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HerbsCellCollectionViewCell.cellIdentifier,
                                                       for: indexPath) as! HerbsCellCollectionViewCell
