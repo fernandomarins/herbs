@@ -43,8 +43,7 @@ class DetailsView: UIView {
     
     lazy var categoryLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.font = UIFont.MontSerratRegular(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
         label.textAlignment = .center
@@ -53,88 +52,84 @@ class DetailsView: UIView {
     
     lazy var scientificNameLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.font = UIFont.MontSerratBlack(size: 16)
+        label.text = "NOME CIENTÍFICO:"
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .left
         return label
     }()
     
     lazy var valueScientificNameLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.font = UIFont.MontSerratLight(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .right
         return label
     }()
     
     lazy var propertiesLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.text = "PROPRIEDADES:"
+        label.font = UIFont.MontSerratBlack(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .left
         return label
     }()
     
     lazy var valuePropertiesLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.font = UIFont.MontSerratLight(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .right
         return label
     }()
     
     lazy var dosesLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.text = "DOSES:"
+        label.font = UIFont.MontSerratBlack(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .left
         return label
     }()
     
     lazy var valueDosesLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.font = UIFont.MontSerratLight(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .right
         return label
     }()
     
     lazy var contraIndicationLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.text = "CONTRA-INDICAÇÃO"
+        label.font = UIFont.MontSerratBlack(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .left
         return label
     }()
     
     lazy var valueContraIndicationLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.font = UIFont.MontSerratLight(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
-        label.textAlignment = .center
+        label.textAlignment = .right
         return label
     }()
     
     lazy var functionsTitle: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.text = "FUNÇÕES"
+        label.font = UIFont.MontSerratBlack(size: 24)
         label.textColor = UIColor.black
         label.numberOfLines = 0
         label.textAlignment = .center
@@ -143,8 +138,7 @@ class DetailsView: UIView {
     
     lazy var functionsLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.font = UIFont.MontSerratLight(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
         label.textAlignment = .center
@@ -153,8 +147,8 @@ class DetailsView: UIView {
     
     lazy var toxicityTitle: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.text = "TOXICIDADE"
+        label.font = UIFont.MontSerratBlack(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
         label.textAlignment = .center
@@ -163,8 +157,7 @@ class DetailsView: UIView {
     
     lazy var toxicityLabel: UILabel! = {
         let label = UILabel()
-        label.text = "herbário de medicina tradicional chinesa"
-        label.font = UIFont.MontSerratBlack(size: 16) // trocar para Montserrat Regular
+        label.font = UIFont.MontSerratLight(size: 16)
         label.textColor = UIColor.black
         label.numberOfLines = 0
         label.textAlignment = .center
