@@ -9,16 +9,16 @@ import Foundation
 import Firebase
 
 class MainViewViewModel {
-    var reloadedTableView: (() -> Void)?
+    // variable to reload the collection view
+    var reloadedCollectionView: (() -> Void)?
     var herbs = [Herb]()
     let service = ClientAPI()
     
     var herbCellViewModels = [HerbCellViewModel]() {
         didSet {
-            reloadedTableView?()
+            reloadedCollectionView?()
         }
     }
-    
     
     func getData() {
         service.getData { [weak self] result in

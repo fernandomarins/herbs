@@ -8,11 +8,11 @@
 import Foundation
 import Firebase
 
-enum FirebaseError: Error {
-    case invalidDecoder
+protocol ClientAPIProtocol {
+    func getData(completion: @escaping ([Herb]) -> Void)
 }
 
-class ClientAPI {
+class ClientAPI: ClientAPIProtocol {
     
     let rootRef = Database.database().reference()
     let ref = Database.database().reference(withPath: "herbs")

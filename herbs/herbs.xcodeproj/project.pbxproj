@@ -66,6 +66,7 @@
 		5538171E27F5F27B00833334 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				55E06F1D27F714C200BC5909 /* HerbCellViewModel.swift */,
 				5538171C27F5F27700833334 /* HerbsCellCollectionViewCell.swift */,
 			);
 			path = Cell;
@@ -136,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				557F7D5B27F4DA9600A4FFA0 /* MainViewController.swift */,
-				55E06F1D27F714C200BC5909 /* HerbCellViewModel.swift */,
 				557F7D6B27F5E15F00A4FFA0 /* MainView.swift */,
 				55B5DE8127F65747005CE137 /* MainViewViewModel.swift */,
 			);

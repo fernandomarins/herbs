@@ -17,17 +17,6 @@ struct Herb {
     let toxicity: String?
     let contraIndication: String?
     
-    init() {
-        ref = nil
-        name = "testando"
-        scientificName = "testando"
-        properties = "testando"
-        doses = "testando"
-        functions = "testando"
-        toxicity = "testando"
-        contraIndication = "testando"
-    }
-    
     init?(snapshot: DataSnapshot) {
         guard let value = snapshot.value as? [String: AnyObject],
               let name = value["name"] as? String,
