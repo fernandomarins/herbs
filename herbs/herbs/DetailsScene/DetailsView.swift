@@ -281,7 +281,7 @@ extension DetailsView {
         }
 
         valueContraIndicationLabel.snp.makeConstraints {
-            $0.top.equalTo(propertiesLabel.snp.bottom).offset(36)
+            $0.top.equalTo(dosesLabel.snp.bottom).offset(36)
             $0.left.equalTo(contraIndicationLabel.snp.right).offset(16)
             $0.right.equalTo(contentView.snp.right).offset(-16)
         }
@@ -307,7 +307,7 @@ extension DetailsView {
         }
 
         toxicityLabel.snp.makeConstraints {
-            $0.top.equalTo(toxicityTitle.snp.bottom).offset(36)
+            $0.top.equalTo(toxicityTitle.snp.bottom).offset(16)
             $0.left.equalToSuperview().offset(16)
             $0.bottom.equalTo(mainContentView.snp.bottom).offset(-36)
             $0.right.equalToSuperview().offset(-16)

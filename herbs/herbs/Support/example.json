@@ -16,8 +16,68 @@
             "properties": "Picante, Amarga, Amornante",
             "doses": "2 a 6g em decocção, 500 a 1000 mg",
             "functions": "Elimina o Frio Exterior por Sudorificação: Empregada para padrões de Vento-Frio com febre baixa, calafrios, ausência de sudorese, cefaléia e pulso superficial. Particularmente efetiva quando a sudorese é difícil.\n\nElimina Frio, aquece o Pulmão e redireciona o Qi para baixo: Para padrões de penetração de Vento-Frio no Pulmão com tosse, chieira, dispnéia e expectoração clara. Pode ser empregada em casos de Fleuma-Frio gerando tosse e expectoração no Pulmão. Clinicamente indicada em Asma Brônquica.\n\nElimina Frio Patogênico e Abre os Orifícios: Para padrões de Frio obstruindo o nariz com congestão nasal, espirros e coriza aquosa.",
-            "toxicity": "",
-            "contraIndication": "",
+            "toxicity": "Intoxicação por efedrina causa hipertemia, sudorese, dor epigástrica, náuseas, vômitos, etc, contudo não há relatos de intoxicação com decocção. Herba Ephedra não deve ser usada em pacientes com arritmias agudas, e pacientes com hipertrofia de próstata",
+            "contraIndication": "Contra-indicada em uso prolongado",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "RAMOS DE CANELA",
+            "scientificName": "Cinnamomum cassia Blume",
+            "properties": "Picante, Doce e Amornante",
+            "doses": "6 a 10 g em decocção, 500 a 1000 mg, até 180 gotas",
+            "functions": "Elimina o Frio do Exterior por Sudorificação: Em febre baixa , calafrios, cefaléia e língua com saburra branca. Muito indicada em deficiência do Qi Defensivo (Wei Qi).\n\nRegula O Qi Defensivo (Wei Qi): Para padrões de ataques sucessivos de Frio no exterior, ou quando a doença de Frio não melhora, apesar do paciente estar suando.\n\nAmorna os Canais (Meridianos) e Desfaz Obstruções: Para padrões onde Vento-Frio e Umidade estão obstruindo os Meridianos causando síndrome BI com dores articulares, aversão ao Vento-Frio e dificuldade para mover as juntas.\n\nParticularmente efetiva para síndrome BI dos ombros (ombro congelado). Direciona o efeito das ervas para o sistema de Meridianos (Canais) ou para o Exterior.\n\nPromove a Circulação de Qi do Tórax (Zhong Qi) e reforça o Yang do Coração: Para padrões de deficiência do Yang do Coração com palpitações, edema de membros inferiores e dispnéia ou sangue congelado obstruindo o Qi do Coração, como angina pectoris, palpitações e língua purpúrea.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "GENGIBRE FRESCO",
+            "scientificName": "Zingiber officinale Rosc",
+            "properties": "Picante e Amornante",
+            "doses": "3 a 10g em decocção, até 45 gotas",
+            "functions": "Elimina o Frio do Exterior por Sudorificação: Em febre baixa, aversão ao Frio, coriza aquosa e pouca ou nenhuma sudorese. Indicado em Frio penetrando no Pulmão causando tosse com expectoração branca.\n\nAquece o Aquecedor Médio e Redireciona o Qi para Baixo: E anorexia, digestão lenta, desejo de líquidos quentes, aversão a gelados, dor no estômago e língua com saburra branca. Particularmente indicado se o Frio causa perversão do Qi do Estômago com náuseas, enjôos, vômitos ou regurgitação de fluído claro.\n\nElimina o Vento-Frio e Aquece o Pulmão: Usado para tosse com expectoração mucóide clara, tanto em situações agudas por penetração de Vento-Frio, como em situações crônicas por acúmulo de Fleuma (Muco) no Pulmão.\n\nHarmoniza as Ervas e Desintoxica: Usado nas fórmulas para harmonizar as ervas e em intoxicações. Particularmente indicado em intoxicações por Acônito, Ban Xia (Pinelia) , carne de peixe ou caranguejo estragadas e cogumelos venenosos.\n\nRegula o Nível Defensivo (Wei Qi): Usado em casos de penetração de Qi Patogênico em pacientes com deficiência do Wei Qi, com sudorese contínua junto com agravamento dos sintomas.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "COENTRO",
+            "scientificName": "Coriandrum sativum L",
+            "properties": "Picante e Amornante",
+            "doses": "6 a 9 g, de 600 a 1200mg",
+            "functions": "Elimina o Frio Exterior por Sudorificação: Induz a diaforese e dispersa o Vento-Frio.\n\nAquece o Aquecedor Médio e Regula o Estômago: anorexia, digestão lenta, desejo de líquidos quentes, aversão a gelados, enjôos.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "ALHO PORÓ",
+            "scientificName": "Bulbus Allii fistulosi",
+            "properties": "Picante e Amornante",
+            "doses": "3 a 10g em decocção",
+            "functions": "Expulsa Vento-Frio por Sudorificação: Para Padrões com febre baixa, ausência de sudorese e congestão nasal. Indicado especialmente no início da doença, para promover sudorificação rápida e abortar o processo patológico.\n\nRompe o Frio por Penetração: Indicada quando o Frio obstrui a passagem do Qi causando bloqueio, especialmente em congestão nasal com coriza clara ou anorexia, náuseas e regurgitação de líquido claro (Frio obstruindo o Qi do Estômago).\n\nAquece o Interior e fortalece o Yang Qi: Para Padrões de deficiência do Yang do Baço com anorexia, Frio na barriga, digestão lenta e diarréia pastosa com restos alimentares mal digeridos.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "FLOR DE MAGNÓLIA JAPONESA",
+            "scientificName": "Magnolia liliflora ders",
+            "properties": "Picante e Levemente Amornante",
+            "doses": "3 a 10g em decocção, 500 a 1000 mg",
+            "functions": "Elimina Vento-Frio no Alto do Corpo: Para padrões moderados de ataque de Vento-Frio no exterior, sem febre, apenas com aversão ao Frio, coriza aquosa e cefaléia.\n\nAbre os Orifícios (narinas): Para qualquer tipo de congestão nasal, mesmo em padrões de Umidade-Calor com coriza purulenta.",
+            "toxicity": "Doses elevadas causam cefaléia, irritação nos olhos e tonteiras",
+            "contraIndication": "Contra-indicada em excesso de Yang do Fígado causando vermelhidão nos olhos e nariz e obstrução nasal. A erva é amornante e pode agravar a condição",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "CAPIM CIDREIRA OU CAPIM LIMÃO",
+            "scientificName": "Cymbopogon citratus (D.C.) Stapf",
+            "properties": "Picante e Amornante",
+            "doses": "3 a 6g em decocção, 500 a 1500 mg, até 120 gotas",
+            "functions": "Elimina o Vento-Frio por Sudorificação: Para padrões exteriores com febre baixa, calafrios, pouca ou nenhuma sudorese e cefaléia. Especialmente indicada se o paciente apresenta invasão precoce no Pulmão por Frio com tosse com expectoração mucóide.\n\nAquece o Pulmão, resolve a Fleuma (Mucosidade) e redireciona o Qi para Baixo: Para padrões de Fleuma (Mucosidade) por invasão de Vento-Frio ou quando o Vento-Frio perturba a descida normal do Qi do Pulmão, com tosse, com ou sem expectoração, expectoração branca, respiração difícil e sibilos.\n\nAmorna o Jiao Médio: Para casos de Frio no Estômago com anorexia, aversão a comidas frias, regurgitação de líquido claro e mal-estar epigástrico.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
             "category": "sudorífica amornante"
         }
     ]
