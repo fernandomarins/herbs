@@ -25,6 +25,7 @@
 		55B5DE8827F65A9F005CE137 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 55B5DE8727F65A9F005CE137 /* SnapKit */; };
 		55C840CF27F5F91B00DB8E67 /* AdventPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55C840CE27F5F91800DB8E67 /* AdventPro-Regular.ttf */; };
 		55C840D127F5F9F800DB8E67 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 55C840D027F5F9F800DB8E67 /* example.json */; };
+		55E06F1E27F714C200BC5909 /* HerbCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E06F1D27F714C200BC5909 /* HerbCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		55B5DE8127F65747005CE137 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		55C840CE27F5F91800DB8E67 /* AdventPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdventPro-Regular.ttf"; sourceTree = "<group>"; };
 		55C840D027F5F9F800DB8E67 /* example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		55E06F1D27F714C200BC5909 /* HerbCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerbCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				557F7D5B27F4DA9600A4FFA0 /* MainViewController.swift */,
+				55E06F1D27F714C200BC5909 /* HerbCellViewModel.swift */,
 				557F7D6B27F5E15F00A4FFA0 /* MainView.swift */,
 				55B5DE8127F65747005CE137 /* MainViewViewModel.swift */,
 			);
@@ -235,6 +238,7 @@
 				557F7D5C27F4DA9600A4FFA0 /* MainViewController.swift in Sources */,
 				557F7D6C27F5E15F00A4FFA0 /* MainView.swift in Sources */,
 				55B5DE8227F65747005CE137 /* MainViewViewModel.swift in Sources */,
+				55E06F1E27F714C200BC5909 /* HerbCellViewModel.swift in Sources */,
 				5538171D27F5F27700833334 /* HerbsCellCollectionViewCell.swift in Sources */,
 				55B5DE7E27F65153005CE137 /* ClientAPI.swift in Sources */,
 				557F7D5827F4DA9600A4FFA0 /* AppDelegate.swift in Sources */,

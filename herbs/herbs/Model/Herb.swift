@@ -33,7 +33,7 @@ struct Herb {
               let name = value["name"] as? String,
               let scientificName = value["scientificName"] as? String,
               let properties = value["properties"] as? String,
-              let doses = value["properties"] as? String,
+              let doses = value["doses"] as? String,
               let functions = value["functions"] as? String,
               let toxicity = value["toxicity"] as? String,
               let contraIndication = value["contraIndication"] as? String

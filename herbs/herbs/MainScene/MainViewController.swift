@@ -33,6 +33,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         viewModel.getData()
+        viewModel.reloadedTableView = {
+            self.contentView.collectionView.reloadData()
+        }
 //        viewModel.getData { herbs, error in
 //            guard let herbs = herbs else {
 //                return
@@ -69,16 +72,18 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return herbs.count
+        return viewModel.herbs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HerbsCellCollectionViewCell.cellIdentifier,
                                                       for: indexPath) as! HerbsCellCollectionViewCell
-        let herb = herbs[indexPath.row]
-        cell.nameLabel.text = herb.name
-        cell.dosesLabel.text = herb.doses
-        cell.propertiesLabel.text = herb.properties
+//        let herb = herbs[indexPath.row]
+//        cell.nameLabel.text = herb.name
+//        cell.dosesLabel.text = herb.doses
+//        cell.propertiesLabel.text = herb.properties
+        let cellVM = viewModel.getCellViewModel(at: indexPath)
+        cell.cellViewMode = cellVM
         
         return cell
     }

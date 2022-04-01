@@ -54,6 +54,14 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    var cellViewMode: HerbCellViewModel? {
+        didSet {
+            nameLabel.text = cellViewMode?.name
+            propertiesLabel.text = cellViewMode?.properties
+            dosesLabel.text = cellViewMode?.doses
+        }
+    }
+    
 }
 
 extension HerbsCellCollectionViewCell {
