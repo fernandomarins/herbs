@@ -9,10 +9,21 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    // MARK: - Loading
     var contentView = MainView(frame: UIScreen.main.bounds)
+
+    var viewModel = MainViewViewModel()
     
-    var herbs = [HerbModel]()
+    init(viewModel: MainViewViewModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
+    }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Lifecycle methods
     override func loadView() {
         super.loadView()
         view = contentView
@@ -21,24 +32,13 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-        let t = loadJson(filename: "example")
-        herbs = t!
-    }
-    
-    func loadJson(filename fileName: String) -> [HerbModel]? {
-        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(Herbs.self, from: data)
-                return jsonData.herbs
-            } catch {
-                print("error:\(error)")
-            }
+        viewModel.getData()
+        viewModel.reloadedCollectionView = { [weak self] in
+            self?.contentView.collectionView.reloadData()
         }
-        return nil
     }
     
+    // MARK: - Collection View
     private func setupCollectionView() {
         contentView.collectionView.register(HerbsCellCollectionViewCell.self,
                                             forCellWithReuseIdentifier: HerbsCellCollectionViewCell.cellIdentifier)
@@ -49,16 +49,14 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return herbs.count
+        return viewModel.herbs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HerbsCellCollectionViewCell.cellIdentifier,
                                                       for: indexPath) as! HerbsCellCollectionViewCell
-        let herb = herbs[indexPath.row]
-        cell.nameLabel.text = herb.name
-        cell.dosesLabel.text = herb.doses
-        cell.propertiesLabel.text = herb.properties
+        let cellVM = viewModel.getCellViewModel(at: indexPath)
+        cell.cellViewMode = cellVM
         
         return cell
     }
