@@ -12,11 +12,11 @@ class MainViewController: UIViewController {
     // MARK: - Loading
     var contentView = MainView(frame: UIScreen.main.bounds)
 
-    var viewModel = MainViewViewModel()
+    var viewModel: MainViewViewModel
     
     init(viewModel: MainViewViewModel) {
-        super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -36,6 +36,12 @@ class MainViewController: UIViewController {
         viewModel.reloadedCollectionView = { [weak self] in
             self?.contentView.collectionView.reloadData()
         }
+        setupNavigationBar()
+    }
+    
+    private func setupNavigationBar() {
+        navigationItem.backButtonTitle = ""
+        navigationController?.navigationBar.tintColor = .white
     }
     
     // MARK: - Collection View
@@ -53,8 +59,9 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = DetailsViewController()
-        vc.herb = viewModel.getCell(at: indexPath)
+        let vm = DetailViewModel()
+        vm.herb = viewModel.getCell(at: indexPath)
+        let vc = DetailsViewController(viewModel: vm)
         show(vc, sender: self)
     }
     

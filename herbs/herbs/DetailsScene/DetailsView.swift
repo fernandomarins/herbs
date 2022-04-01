@@ -27,10 +27,12 @@ class DetailsView: UIView {
     
     lazy var titleLabel: UILabel! = {
         let label = UILabel()
-        label.text = "ervas"
+        label.text = "FLOR DE MAGÓGLIA JAPONESA"
         label.font = UIFont.MontSerratBlack(size: 26)
         label.textColor = UIColor.white
         label.text = label.text?.uppercased()
+        label.numberOfLines = 0
+        label.textAlignment = .center
         return label
     }()
     
@@ -175,6 +177,7 @@ extension DetailsView {
     func buildViewHierarchy() {
         addSubview(contentView)
         contentView.addSubview(titleLabel)
+        contentView.addSubview(mainContentView)
         mainContentView.addSubview(categoryLabel)
         mainContentView.addSubview(scientificNameLabel)
         mainContentView.addSubview(valueScientificNameLabel)
@@ -199,22 +202,24 @@ extension DetailsView {
         }
         
         titleLabel.snp.makeConstraints {
-            $0.top.equalTo(contentView.snp.top).offset(50)
+            $0.top.equalTo(contentView.snp.top).offset(100)
             $0.centerX.equalToSuperview()
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
         }
-        
+
         mainContentView.snp.makeConstraints {
-            $0.top.equalTo(subTitleLabel.snp.bottom).offset(16)
+            $0.top.equalTo(titleLabel.snp.bottom).offset(16)
             $0.left.equalToSuperview()
             $0.bottom.equalToSuperview()
             $0.right.equalToSuperview()
         }
         
-        collectionView.snp.makeConstraints {
+        categoryLabel.snp.makeConstraints {
             $0.top.equalTo(mainContentView.snp.top).offset(16)
-            $0.left.equalTo(mainContentView.snp.left).offset(16)
-            $0.bottom.equalTo(mainContentView.snp.bottom).offset(-30)
-            $0.right.equalTo(mainContentView.snp.right).offset(-16)
+            $0.centerX.equalToSuperview()
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
         }
     }
 }

@@ -10,11 +10,30 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
-    var herb: Herb?
+    var contentView = DetailsView(frame: UIScreen.main.bounds)
+    
+    var viewModel: DetailViewModel
+    
+    init(viewModel: DetailViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+        super.loadView()
+        view = contentView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = herb?.name
-        view.backgroundColor = .white
+        viewModel.fetchData()
+        viewModel.passData = {
+            
+        }
     }
+    
 }
