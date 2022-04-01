@@ -30,10 +30,21 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.fetchData()
-        viewModel.passData = {
-            
+        viewModel.fetchData { [weak self] herb in
+            self?.setData(herb: herb)
         }
+    }
+    
+    private func setData(herb: HerbCellViewModel) {
+        contentView.titleLabel.text = herb.name
+        contentView.categoryLabel.text = herb.category
+        contentView.valueScientificNameLabel.text = herb.scientificName
+        contentView.valuePropertiesLabel.text = herb.properties
+        contentView.valueDosesLabel.text = herb.doses
+        contentView.valueContraIndicationLabel.text = herb.contraIndication
+        
+        contentView.functionsLabel.text = herb.functions
+        contentView.toxicityLabel.text = herb.toxicity
     }
     
 }

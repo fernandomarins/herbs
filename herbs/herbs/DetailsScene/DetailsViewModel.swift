@@ -9,20 +9,12 @@ import Foundation
 
 class DetailViewModel {
     
-    var passData: (() -> Void)?
-    
     var herb: Herb?
     
-    var herbData: HerbCellViewModel? {
-        didSet {
-            passData?()
-        }
-    }
-    
-    func fetchData() {
+    func fetchData(completion: @escaping (HerbCellViewModel) -> Void) {
         if let herb = herb {
-            herbData = createCellModel(herb: herb)
-            print(herbData)
+            let herbData = createCellModel(herb: herb)
+            completion(herbData)
         }
     }
     
