@@ -12,11 +12,11 @@ class MainViewController: UIViewController {
     // MARK: - Loading
     var contentView = MainView(frame: UIScreen.main.bounds)
 
-    var viewModel = MainViewViewModel()
+    var viewModel: MainViewViewModel
     
     init(viewModel: MainViewViewModel) {
-        super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -34,7 +34,9 @@ class MainViewController: UIViewController {
         setupCollectionView()
         viewModel.getData()
         viewModel.reloadedCollectionView = { [weak self] in
-            self?.contentView.collectionView.reloadData()
+            DispatchQueue.main.async {
+                self?.contentView.collectionView.reloadData()
+            }
         }
     }
     
@@ -50,6 +52,13 @@ class MainViewController: UIViewController {
 extension MainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.herbs.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vm = DetailViewModel()
+        vm.herb = viewModel.getCell(at: indexPath)
+        let vc = DetailsViewController(viewModel: vm)
+        show(vc, sender: self)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

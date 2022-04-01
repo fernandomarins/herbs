@@ -12,6 +12,14 @@ extension UIFont {
         return UIFont(name: "Montserrat-Black", size: size)!
     }
     
+    static func MontSerratRegular(size: CGFloat) -> UIFont {
+        return UIFont(name: "Montserrat-Regular", size: size)!
+    }
+    
+    static func MontSerratLight(size: CGFloat) -> UIFont {
+        return UIFont(name: "Montserrat-Light", size: size)!
+    }
+    
     static func ActorRegular(size: CGFloat) -> UIFont {
         return UIFont(name: "Actor-Regular", size: size)!
     }

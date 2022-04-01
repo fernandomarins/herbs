@@ -54,7 +54,11 @@ class MainViewViewModel {
     }
     
     func getCellViewModel(at indexPath: IndexPath) -> HerbCellViewModel {
-        return herbCellViewModels[indexPath.row]
+        return herbCellViewModels[indexPath.item]
+    }
+    
+    func getCell(at indexPath: IndexPath) -> Herb {
+        return herbs[indexPath.item]
     }
     
 }
