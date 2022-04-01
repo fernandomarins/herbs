@@ -32,6 +32,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        setupSearchBar()
         viewModel.getData()
         viewModel.reloadedCollectionView = { [weak self] in
             DispatchQueue.main.async {
@@ -46,6 +47,10 @@ class MainViewController: UIViewController {
                                             forCellWithReuseIdentifier: HerbsCellCollectionViewCell.cellIdentifier)
         contentView.collectionView.delegate = self
         contentView.collectionView.dataSource = self
+    }
+    
+    private func setupSearchBar() {
+        contentView.searchBar.delegate = self
     }
 }
 
@@ -68,5 +73,12 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.cellViewMode = cellVM
         
         return cell
+    }
+}
+
+extension MainViewController: UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        contentView.toggle()
+        view.endEditing(true)
     }
 }
