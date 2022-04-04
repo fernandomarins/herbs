@@ -1,16 +1,6 @@
 {
     "herbs": [
         {
-            "name": "",
-            "scientificName": "",
-            "properties": "",
-            "doses": "",
-            "functions": "",
-            "toxicity": "",
-            "contraIndication": "",
-            "category": ""
-        },
-        {
             "name": "Éfedra",
             "scientificName": "Ephedra sinica Stapf",
             "properties": "Picante, Amarga, Amornante",
@@ -78,6 +68,16 @@
             "functions": "Elimina o Vento-Frio por Sudorificação: Para padrões exteriores com febre baixa, calafrios, pouca ou nenhuma sudorese e cefaléia. Especialmente indicada se o paciente apresenta invasão precoce no Pulmão por Frio com tosse com expectoração mucóide.\n\nAquece o Pulmão, resolve a Fleuma (Mucosidade) e redireciona o Qi para Baixo: Para padrões de Fleuma (Mucosidade) por invasão de Vento-Frio ou quando o Vento-Frio perturba a descida normal do Qi do Pulmão, com tosse, com ou sem expectoração, expectoração branca, respiração difícil e sibilos.\n\nAmorna o Jiao Médio: Para casos de Frio no Estômago com anorexia, aversão a comidas frias, regurgitação de líquido claro e mal-estar epigástrico.",
             "toxicity": "Não há informação",
             "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "CARRAPICHO DE CARNEIRO",
+            "scientificName": "Xanthium sibiricum Patr. Ex Widd. ou Xanthium cavanilesii Schoun",
+            "properties": " Levemente Amargo, Doce, Amornante e Tóxico",
+            "doses": "3 a 10g em decocção, 500 a 800 mg, até 90 gotas",
+            "functions": "Elimina Vento-Frio do Exterior: Usado para Padrões de Vento-Frio alojando na pele e músculos, com cefaléia, dor e contratura na musculatura das costas após ataque de Vento.\n\nElimina Vento e Umidade das Camadas Superficiais: Para Padrões de Vento-Umidade na pele causando prurido, lesões urticariformes migratórias, etc.\n\nAbre os Orifícios do Nariz: Para congestão nasal de qualquer natureza, seja Vento-Frio ou Calor Umidade, em combinação com ervas apropriadas.\n\nElimina Vento e Umidade dos Meridianos (Canais): Usada como erva auxiliar em casos de síndrome BI por Vento-Frio com artralgias migratórias.",
+            "toxicity": "O calor inativa a maior parte das substâncias tóxicas presentes em Cang Er Zi, o que ocorre durante a decocção. Os sintomas tóxicos são confusão metal, coma profundo, irregularidades respiratórias e parada respiratória",
+            "contraIndication": "Contra-indicada em cefaléias ou dores articulares causadas por Deficiência de Sangue: esta erva age dispersando o Qi e eliminando para o exterior. Isto piora as deficiências",
             "category": "sudorífica amornante"
         }
     ]
