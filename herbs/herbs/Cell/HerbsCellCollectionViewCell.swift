@@ -85,7 +85,7 @@ extension HerbsCellCollectionViewCell {
             $0.top.equalTo(contentView.snp.top).offset(16)
             $0.left.equalTo(contentView.snp.left).offset(16)
             $0.height.equalTo(88)
-            $0.width.equalTo(122)
+            $0.width.equalTo(140)
         }
         
         nameLabel.snp.makeConstraints {
