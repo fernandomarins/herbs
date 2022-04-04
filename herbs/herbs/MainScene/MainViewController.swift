@@ -111,9 +111,15 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
 }
 
 extension MainViewController: UISearchBarDelegate {
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         contentView.toggle()
         dismissKeyboard()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        contentView.toggle()
+        searchBar.endEditing(true)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
