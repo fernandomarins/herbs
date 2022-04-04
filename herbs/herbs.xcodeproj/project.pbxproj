@@ -31,6 +31,7 @@
 		55E06F2827F7259400BC5909 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E06F2727F7259400BC5909 /* DetailsViewModel.swift */; };
 		55E06F2A27F727C400BC5909 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55E06F2927F727C000BC5909 /* Montserrat-Regular.ttf */; };
 		55E06F2C27F7285500BC5909 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55E06F2B27F7285100BC5909 /* Montserrat-Light.ttf */; };
+		55F805D027FB68440071AC49 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F805CF27FB68440071AC49 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		55E06F2727F7259400BC5909 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		55E06F2927F727C000BC5909 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		55E06F2B27F7285100BC5909 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		55F805CF27FB68440071AC49 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				557F7D7227F5E9CE00A4FFA0 /* UIFont+Extensions.swift */,
+				55F805CF27FB68440071AC49 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				55E06F1E27F714C200BC5909 /* HerbCellViewModel.swift in Sources */,
 				55E06F2627F7258E00BC5909 /* DetailsView.swift in Sources */,
 				5538171D27F5F27700833334 /* HerbsCellCollectionViewCell.swift in Sources */,
+				55F805D027FB68440071AC49 /* String+Extensions.swift in Sources */,
 				55B5DE7E27F65153005CE137 /* ClientAPI.swift in Sources */,
 				557F7D5827F4DA9600A4FFA0 /* AppDelegate.swift in Sources */,
 				557F7D7327F5E9CE00A4FFA0 /* UIFont+Extensions.swift in Sources */,
