@@ -47,7 +47,19 @@ class MainView: UIView {
     lazy var searchButton: UIButton! = {
         let button = UIButton()
         button.setImage(UIImage(named: "search"), for: .normal)
+        button.addTarget(self, action: #selector(toggle), for: .touchUpInside)
         return button
+    }()
+    
+    lazy var searchBar: UISearchBar! = {
+        let searchBar = UISearchBar()
+        searchBar.layer.cornerRadius = 15
+        searchBar.barTintColor = UIColor.init(red: 57/255, green: 195/255, blue: 154/255, alpha: 1.0)
+        searchBar.backgroundColor = .white
+        searchBar.showsCancelButton = true
+        searchBar.searchTextField.textColor = .white
+        searchBar.placeholder = "Buscar..."
+        return searchBar
     }()
     
     lazy var mainContentView: UIView! = {
@@ -64,6 +76,19 @@ class MainView: UIView {
         let collectionView = UICollectionView(frame: CGRect(), collectionViewLayout: layout)
         return collectionView
     }()
+    
+    @objc func toggle() {
+        searchBar.becomeFirstResponder()
+        if searchBar.isHidden {
+            searchBar.isHidden = false
+            subTitleLabel.isHidden = true
+            searchButton.isHidden = true
+        } else {
+            searchBar.isHidden = true
+            subTitleLabel.isHidden = false
+            searchButton.isHidden = false
+        }
+    }
 }
 
 extension MainView {
@@ -71,6 +96,7 @@ extension MainView {
     func setupView() {
         buildViewHierarchy()
         setupContraints()
+        aditionalConfiguration()
     }
     
     func buildViewHierarchy() {
@@ -78,6 +104,7 @@ extension MainView {
         contentView.addSubview(titleLabel)
         contentView.addSubview(subTitleLabel)
         contentView.addSubview(searchButton)
+        contentView.addSubview(searchBar)
         contentView.addSubview(mainContentView)
         mainContentView.addSubview(collectionView)
     }
@@ -109,6 +136,13 @@ extension MainView {
             $0.width.equalTo(50)
         }
         
+        searchBar.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(5)
+            $0.left.equalTo(contentView.snp.left).offset(16)
+            $0.right.equalTo(contentView.snp.right).offset(-16)
+            $0.height.equalTo(50)
+        }
+        
         mainContentView.snp.makeConstraints {
             $0.top.equalTo(subTitleLabel.snp.bottom).offset(16)
             $0.left.equalToSuperview()
@@ -122,5 +156,9 @@ extension MainView {
             $0.bottom.equalTo(mainContentView.snp.bottom).offset(-30)
             $0.right.equalTo(mainContentView.snp.right).offset(-16)
         }
+    }
+    
+    func aditionalConfiguration() {
+        searchBar.isHidden = true
     }
 }

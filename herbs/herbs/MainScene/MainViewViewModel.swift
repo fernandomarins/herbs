@@ -12,6 +12,7 @@ class MainViewViewModel {
     // variable to reload the collection view
     var reloadedCollectionView: (() -> Void)?
     var herbs = [Herb]()
+    var filteredValues = [HerbCellViewModel]()
     let service = ClientAPI()
     
     var herbCellViewModels = [HerbCellViewModel]() {
@@ -38,7 +39,7 @@ class MainViewViewModel {
     }
     
     func createCellModel(herb: Herb) -> HerbCellViewModel {
-        let name = herb.name
+        let name = herb.name.uppercased()
         let scientificName = herb.scientificName
         let properties = herb.properties
         let doses = herb.doses
@@ -55,6 +56,10 @@ class MainViewViewModel {
     
     func getCellViewModel(at indexPath: IndexPath) -> HerbCellViewModel {
         return herbCellViewModels[indexPath.item]
+    }
+    
+    func getFilteredViewModel(at indexPath: IndexPath) -> HerbCellViewModel {
+        return filteredValues[indexPath.item]
     }
     
     func getCell(at indexPath: IndexPath) -> Herb {
