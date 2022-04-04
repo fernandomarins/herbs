@@ -57,6 +57,8 @@ class MainView: UIView {
         searchBar.barTintColor = UIColor.init(red: 57/255, green: 195/255, blue: 154/255, alpha: 1.0)
         searchBar.backgroundColor = .white
         searchBar.showsCancelButton = true
+        searchBar.searchTextField.textColor = .white
+        searchBar.placeholder = "Buscar..."
         return searchBar
     }()
     
