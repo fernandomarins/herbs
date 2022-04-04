@@ -79,6 +79,36 @@
             "toxicity": "O calor inativa a maior parte das substâncias tóxicas presentes em Cang Er Zi, o que ocorre durante a decocção. Os sintomas tóxicos são confusão metal, coma profundo, irregularidades respiratórias e parada respiratória",
             "contraIndication": "Contra-indicada em cefaléias ou dores articulares causadas por Deficiência de Sangue: esta erva age dispersando o Qi e eliminando para o exterior. Isto piora as deficiências",
             "category": "sudorífica amornante"
+        },
+        {
+            "name": "FOLHA DE LARANJEIRA",
+            "scientificName": "Citrus aurantium L",
+            "properties": "Amarga, Ácida, Picante e Neutra",
+            "doses": "3 a 6g em decocção, 500 a 1500 mg, até 90 gotas",
+            "functions": "Elimina o Vento-Frio por Sudorificação: Para padrões exteriores com febre baixa, calafrios, pouca ou nenhuma sudorese e cefaléia. Indicada se o paciente apresenta invasão no Pulmão por Vento-Frio com tosse e expectoração mucóide.\n\nAcalma a Mente (Shen): Para Padrões moderados de dores de cabeça, agitação e insônia. Particularmente indicada em insônia e dores de cabeça acompanhada de estados gripais.\n\nAmorna o Jiao Médio: Para casos de Frio no Estômago com anorexia, digestão lenta e Fraqueza do Qi dos Intestinos com distensão abdominal e gases.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "TOMILHO",
+            "scientificName": "Herba Thymii",
+            "properties": "Picante e Amornante",
+            "doses": "2 a 6g, 500 a 1000 mg",
+            "functions": "Elimina o Vento-Frio por Sudorificação: Para padrões exteriores com febre baixa, calafrios, pouca ou nenhuma sudorese e cefaléia. Indicada se o paciente apresenta invasão no Pulmão por Vento-Frio causando tosse e formação de Mucosidade.\n\nFortalece o Qi do Pulmão e consolida o Wei Qi: Indicado em caso de epidemias gripais para prevenir contaminação, recidivas freqüentes de resfriados, fadiga, e para ajudar o organismo a debelar o agente patogênico mais rápido.\n\nAmorna o Jiao Médio: Para casos de Frio no Estômago com anorexia, digestão lenta, diarréia, e Fraqueza do Qi dos Intestinos com distensão abdominal e gases com odor intenso (putrefação intestinal).\n\nTonifica o Yang Geral: Para Padrões de esgotamento físico, hipotensão, diminuição da memória, associado a outras ervas tonificantes e nutritivas.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "HORTELÃ COMUM OU HORTELÃ PIMENTA",
+            "scientificName": "Mentha arvensis L. ou Mentha piperita L",
+            "properties": "Picante, Aromática e Refrescante",
+            "doses": "2 a 6g em decocção, 300 a 1500mg, até 120 gotas",
+            "functions": "ATENÇÃO: Adicionar esta erva ao fim da decocção para não se perder os princípios aromáticos voláteis.\n\nElimina o Vento-Calor no Exterior do Corpo por Sudorificação: Em sinais como febre alta, cefaléia pulsátil, catarro amarelo no nariz ou tosse seca.\n\nClareia o Vento-Calor na Cabeça: Em sintomas como conjuntivite, irritação ocular, faringite, amigdalite.\n\nPromove o Livre Fluxo de Qi do Fígado: Usada em plenitude epigástrica ou nos hipocôndrios, irritabilidade, instabilidade emocional, gosto amargo na boca, etc.",
+            "toxicity": "Pode apresentar atividade abortiva. Por isto, esta erva é desaconselhável na gravidez.",
+            "contraIndication": "Não há informação",
+            "category": "Sudoríficas Refrescantes"
         }
     ]
 }

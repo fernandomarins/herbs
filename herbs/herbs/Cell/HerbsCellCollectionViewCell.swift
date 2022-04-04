@@ -34,6 +34,8 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
         label.text = label.text?.uppercased()
         label.numberOfLines = 0
         label.textAlignment = .center
+        label.adjustsFontSizeToFitWidth = true
+        
         return label
     }()
     
@@ -85,14 +87,16 @@ extension HerbsCellCollectionViewCell {
             $0.top.equalTo(contentView.snp.top).offset(16)
             $0.left.equalTo(contentView.snp.left).offset(16)
             $0.height.equalTo(88)
-            $0.width.equalTo(140)
+            $0.width.equalTo(130)
         }
         
         nameLabel.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.centerX.equalToSuperview()
+            $0.top.equalToSuperview().offset(16)
             $0.right.equalToSuperview().offset(-16)
             $0.left.equalToSuperview().offset(16)
+            $0.bottom.equalToSuperview().offset(-16)
         }
         
         propertiesLabel.snp.makeConstraints {
