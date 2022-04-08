@@ -139,6 +139,66 @@
             "toxicity": "Usar cuidadosamente na gravidez, pois este naturoterápico interfere no Sangue do Fígado, direcionando-o para os Meridianos, podendo afetar a nutrição do feto",
             "contraIndication": "Não há informação",
             "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "FLOR DE SABUGEIRO",
+            "scientificName": "Sambucus nigra L",
+            "properties": "Doce, Picante e Refrescante",
+            "doses": "4 a 10g em decocção, 500 a 1500mg, até 90 gotas",
+            "functions": "Elimina Vento Calor do Exterior e Beneficia a Garganta: Para Padrões de Vento-Calor com febre alta, pouco calafrio, tosse, muita sudorese, faringite, amigdalite, vermelhidão na garganta, etc.\n\nExterioriza o Calor e Promove o Aparecimento de Rashes: Para doenças exantemáticas em fase inicial, para apressar a cura (indicada em casos de sarampo, rubéola, escarlatina).\n\nElimina Calor e Toxinas: Para a eliminação das toxinas produzidas pelo calor (febre), gerando rash cutâneo, pústulas, lesões avermelhadas, prostração intensa, aceleração do pulso, indicando a presença de toxinas. Pode ser usada para furúnculos, eczemas ou acne.\n\nElimina Vento-Calor dos Olhos: Para irritação conjuntival com ardência ou secreção ocular, causados por ataque de Vento-Calor. Associar ao uso externo.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "MARGARIDINHA",
+            "scientificName": "Bellis perennis L",
+            "properties": "Doce, Amarga, Picante e Neutra",
+            "doses": "3 a 6g em decocção; 500 a 1500 mg; até 120 gotas",
+            "functions": "Elimina Vento Calor do Exterior e Elimina as Toxinas do Calor: Para Padrões de Vento- Calor com febre alta, pouco calafrio, tosse com catarro, faringite, amigdalite, vermelhidão na garganta, sarampo, escarlatina, parotidite, etc. Facilita fortemente a eliminação das toxinas produzidas pelo Calor (infecção) pelo suor e urina, abaixando a febre. Pode ser usada para desinflamar feridas na pele.\n\nTonifica o Aquecedor Médio: Para fraqueza do Estômago e Baço-Pâncreas, durante e após o adoecimento e recuperação (convalescença) gerando perda de apetite e fraqueza.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "FOLHA DE AMORA",
+            "scientificName": "Morus alba L",
+            "properties": "Doce, discretamente Amarga e Refrescante",
+            "doses": "5 a 10g em decocção; 500 a 2000mg; até 120gotas",
+            "functions": "Elimina Vento e Calor do Exterior e Beneficia o Pulmão: Para padrões de febre alta, sudorese, cefaléia e faringite. Particularmente indicada em casos onde o Pulmão foi invadido, com tosse, expectorações amareladas, hemópticas e dispnéia. Indicado em pneumonias bacterianas.\n\nClareia o Calor do Fígado e Beneficia os Olhos: Para Padrões de Excesso (agitação, face congesta, olhos vermelhos e cefaléia) ou padrões de Deficiência de Yin (olhos ressecados, irritação ocular, nervosismo, diminuição das regras, palidez na língua com ponta vermelha). Também empregada em casos agudos de ataque de Vento-Calor com edema palpebral, lacrimejamento purulento, vermelhidão ocular, etc. Indicada em conjuntivite aguda.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "CRISÂNTEMO ÍNDICO",
+            "scientificName": "Chrysanthemum indicum L",
+            "properties": "Doce, Amargo, Suave, Fria",
+            "doses": "9 a 18 g, 1800 a 3000mg",
+            "functions": "Elimina Vento-Calor e Refresca o Aquecedor Superior: Febre, Calor na Cabeça, olhos vermelhos, ardência ocular.\n\nElimina Umidade-Calor e Mucosidade Calor na Pele: Para Acnes e Furúnculos de raiz profunda e purulenta.\n\nDomina o Fogo do Fígado: Em hipertensão oriunda do Fogo Hepático, Enxaquecas de Ápice, Vermelhidão e Ardência Ocular.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "CRISÂNTEMO",
+            "scientificName": "Chrisantemum morifolium Ramat",
+            "properties": "Doce, ligeiramente Amarga, Fria",
+            "doses": "9 a 20g, 900 a 2000mg",
+            "functions": "Elimina Vento Calor por Sudorificação: Para Padrões com febre alta, face vermelha, sudorese profusa e cefaléia pulsátil.\n\nClareia o Calor no Canal do Fígado e Beneficia os Olhos: Para Padrões de Excesso (Vento- Calor externo) ou Deficiência (deficiência do Yin do Fígado) gerando olhos vermelhos, edema ocular, lacrimejamento ou olhos secos, ardência nos olhos, inflamação das pálpebras, visão borrada, etc. Indicado em glaucoma, conjuntivite aguda e conjuntivite alérgica.\n\nAcalma o Yang do Fígado e previne o aparecimento de Vento: Para Padrões de Ascensão do Fogo com nervosismo, agitação, cefaléia pulsátil, vertigens, olhos vermelhos e pulso em corda.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "CAVALINHA",
+            "scientificName": "Equisetum arvense",
+            "properties": "Doce, Amarga e Neutra",
+            "doses": "3 a 9g, 500 a 1500mg, até 120 gotas",
+            "functions": "Elimina Vento e Calor dos Olhos: Para Padrões de Invasão de Vento-Calor nos olhos com irritação e ardência oculares, lacrimejamento excessivo, diminuição da visão, vermelhidão nas pálpebras e conjuntivas, fotofobia, etc. Indicada em conjuntivite.\n\nElimina Vento-Calor do Pulmão: Usada como erva auxiliar para quadros de Vento-Calor no exterior que atingiram o Pulmão, com febre, sudorese, sensação de calor, dor torácica e tosse com expectoração purulenta.\n\nElimina Calor no Canal do Fígado e Pára Sangramentos: Para Hemorróidas por Calor no Fígado e Intestino Grosso, com constipação, fezes ressecadas, dor e sangramento durante a evacuação.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
         }
     ]
 }
