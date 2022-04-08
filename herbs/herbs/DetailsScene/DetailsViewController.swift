@@ -45,7 +45,12 @@ class DetailsViewController: UIViewController {
         contentView.valueDosesLabel.text = herb.doses
         contentView.valueContraIndicationLabel.text = herb.contraIndication
         
-        contentView.functionsLabel.text = herb.functions
+        // Boldening one part of the code
+        let font = UIFont.MontSerratLight(size: 16)
+        let boldFont = UIFont.MontSerratBlack(size: 16)
+        let text = "ATENÇÃO" as NSString
+        contentView.functionsLabel.attributedText = herb.functions.withBoldText(boldPartsOfString: [text], font: font, boldFont: boldFont)
+        
         contentView.toxicityLabel.text = herb.toxicity
     }
     

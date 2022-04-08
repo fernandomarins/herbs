@@ -34,7 +34,7 @@
             "name": "COENTRO",
             "scientificName": "Coriandrum sativum L",
             "properties": "Picante e Amornante",
-            "doses": "6 a 9 g, de 600 a 1200mg",
+            "doses": "6 a 9g em decocção, de 600 a 1200mg",
             "functions": "Elimina o Frio Exterior por Sudorificação: Induz a diaforese e dispersa o Vento-Frio.\n\nAquece o Aquecedor Médio e Regula o Estômago: anorexia, digestão lenta, desejo de líquidos quentes, aversão a gelados, enjôos.",
             "toxicity": "Não há informação",
             "contraIndication": "Não há informação",
@@ -79,6 +79,66 @@
             "toxicity": "O calor inativa a maior parte das substâncias tóxicas presentes em Cang Er Zi, o que ocorre durante a decocção. Os sintomas tóxicos são confusão metal, coma profundo, irregularidades respiratórias e parada respiratória",
             "contraIndication": "Contra-indicada em cefaléias ou dores articulares causadas por Deficiência de Sangue: esta erva age dispersando o Qi e eliminando para o exterior. Isto piora as deficiências",
             "category": "sudorífica amornante"
+        },
+        {
+            "name": "FOLHA DE LARANJEIRA",
+            "scientificName": "Citrus aurantium L",
+            "properties": "Amarga, Ácida, Picante e Neutra",
+            "doses": "3 a 6g em decocção, 500 a 1500 mg, até 90 gotas",
+            "functions": "Elimina o Vento-Frio por Sudorificação: Para padrões exteriores com febre baixa, calafrios, pouca ou nenhuma sudorese e cefaléia. Indicada se o paciente apresenta invasão no Pulmão por Vento-Frio com tosse e expectoração mucóide.\n\nAcalma a Mente (Shen): Para Padrões moderados de dores de cabeça, agitação e insônia. Particularmente indicada em insônia e dores de cabeça acompanhada de estados gripais.\n\nAmorna o Jiao Médio: Para casos de Frio no Estômago com anorexia, digestão lenta e Fraqueza do Qi dos Intestinos com distensão abdominal e gases.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "TOMILHO",
+            "scientificName": "Herba Thymii",
+            "properties": "Picante e Amornante",
+            "doses": "2 a 6g em decocção, 500 a 1000 mg",
+            "functions": "Elimina o Vento-Frio por Sudorificação: Para padrões exteriores com febre baixa, calafrios, pouca ou nenhuma sudorese e cefaléia. Indicada se o paciente apresenta invasão no Pulmão por Vento-Frio causando tosse e formação de Mucosidade.\n\nFortalece o Qi do Pulmão e consolida o Wei Qi: Indicado em caso de epidemias gripais para prevenir contaminação, recidivas freqüentes de resfriados, fadiga, e para ajudar o organismo a debelar o agente patogênico mais rápido.\n\nAmorna o Jiao Médio: Para casos de Frio no Estômago com anorexia, digestão lenta, diarréia, e Fraqueza do Qi dos Intestinos com distensão abdominal e gases com odor intenso (putrefação intestinal).\n\nTonifica o Yang Geral: Para Padrões de esgotamento físico, hipotensão, diminuição da memória, associado a outras ervas tonificantes e nutritivas.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "sudorífica amornante"
+        },
+        {
+            "name": "HORTELÃ COMUM OU HORTELÃ PIMENTA",
+            "scientificName": "Mentha arvensis L. ou Mentha piperita L",
+            "properties": "Picante, Aromática e Refrescante",
+            "doses": "2 a 6g em decocção, 300 a 1500mg, até 120 gotas",
+            "functions": "ATENÇÃO: Adicionar esta erva ao fim da decocção para não se perder os princípios aromáticos voláteis.\n\nElimina o Vento-Calor no Exterior do Corpo por Sudorificação: Em sinais como febre alta, cefaléia pulsátil, catarro amarelo no nariz ou tosse seca.\n\nClareia o Vento-Calor na Cabeça: Em sintomas como conjuntivite, irritação ocular, faringite, amigdalite.\n\nPromove o Livre Fluxo de Qi do Fígado: Usada em plenitude epigástrica ou nos hipocôndrios, irritabilidade, instabilidade emocional, gosto amargo na boca, etc.",
+            "toxicity": "Pode apresentar atividade abortiva. Por isto, esta erva é desaconselhável na gravidez.",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "FRUTO DA BARDANA",
+            "scientificName": "Arctium lappa L",
+            "properties": "Picante, Amargo e Refrescante",
+            "doses": "3 a 10g em decocção, 500 a 1500mg",
+            "functions": "Elimina Vento Calor por Sudorificação: Para Vento-Calor acometendo a garganta, com febre alta, sudorese profusa, faringite, vermelhidão na garganta ou tosse seca.\n\nElimina o Calor e Toxinas: Para sintomas como rash cutâneo, pústulas, lesões avermelhadas, prostração intensa, aceleração do pulso, indicando a presença de toxinas durante doenças por Calor ou Vento-Calor. Pode ser usada para abcessos isolados e acne.\n\nExterioriza o Calor e Promove o Aparecimento de Rashes: Usada em doenças exantemáticas para acelerar a cura, exteriorizando o Calor e provocando a manifestação rápida e completa do rash. Pode ser usada em psoríase.\n\nUmidifica o Intestino: Para constipação por Calor com ressecamento das fezes, evacuação dolorosa, hemorróidas e sangue vivo nas fezes.",
+            "toxicity": "Não há informação",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "CASCA DE CIGARRA",
+            "scientificName": "Crypotympana atrata Fabr",
+            "properties": "Doce, Salgado e Refrescante",
+            "doses": "3 a 10g em decocção, 500 a 2500mg",
+            "functions": "ATENÇÃO: No tétano e espasmos graves as doses poderão chegar até a 30g.\n\nElimina Vento Calor do Exterior e Beneficia a Garganta: Para Padrões de Vento-Calor com febre alta, pouco calafrio, muita sudorese, faringite, vermelhidão na garganta, etc. Particularmente indicado quando há rouquidão ou perda da voz.\n\nExterioriza o Calor e Promove o Aparecimento de Rashes: Para doenças exantemáticas em fase inicial (indicada em sarampo).\n\nElimina Vento-Calor dos Olhos: Ardência ou dor ocular, edema de pálpebras e visão borrada.\n\nElimina Vento dos Meridianos (Canais) e Acalma Espasmos: Para Padrões de Vento no Exterior com espasmos musculares, contraturas, opistótonos, convulsões, etc. Particularmente indicado em convulsões febris em crianças. Clinicamente, este naturoterápico é usado em tétano, na China.",
+            "toxicity": "Usar cuidadosamente na gravidez, pois este naturoterápico interfere no Sangue do Fígado, direcionando-o para os Meridianos, podendo afetar a nutrição do feto",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
+        },
+        {
+            "name": "BUCHINHA DO NORTE",
+            "scientificName": "Luffa opperculata",
+            "properties": "Picante, Amarga, Fria e Tóxica",
+            "doses": "2 a 4g em decocção, de 200 a 400mg, até 40 gotas ao dia",
+            "functions": "Elimina Umidade-Calor das Camadas Superficiais: Para Padrões de Umidade-Calor na pele causando prurido, lesões urticariformes; indicada em eczemas genitoescrotais.\n\nAbre os Orifícios do Nariz: Para congestão nasal de qualquer natureza, seja Vento-Frio ou Calor-Umidade, em combinação com ervas apropriadas.\n\nElimina Umidade-Calor nos 3 Aquecedores: Como diurético e purgativo para ascite ou edemas generalizados.\n\nMata Parasitas: Como vermífugo para vermes intestinais.",
+            "toxicity": "Usar cuidadosamente na gravidez, pois este naturoterápico interfere no Sangue do Fígado, direcionando-o para os Meridianos, podendo afetar a nutrição do feto",
+            "contraIndication": "Não há informação",
+            "category": "Sudorífica Refrescante"
         }
     ]
 }
