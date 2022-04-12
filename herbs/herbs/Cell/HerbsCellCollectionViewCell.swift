@@ -57,7 +57,7 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    var cellViewMode: HerbCellViewModel? {
+    var cellViewMode: Herb? {
         didSet {
             nameLabel.text = cellViewMode?.name
             propertiesLabel.text = cellViewMode?.properties

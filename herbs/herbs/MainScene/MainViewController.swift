@@ -62,7 +62,7 @@ class MainViewController: UIViewController {
     }
     
     private func filterContentForSearchText(_ searchText: String) {
-        viewModel.filteredValues = viewModel.herbCellViewModels.filter { (herb: HerbCellViewModel) -> Bool in
+        viewModel.filteredValues = viewModel.herbs.filter { (herb: Herb) -> Bool in
             return herb.name.lowercased().contains(searchText.lowercased())
         }
 
@@ -75,7 +75,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         if isFiltering {
             return viewModel.filteredValues.count
         }
-        return viewModel.herbCellViewModels.count
+        return viewModel.herbs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -86,14 +86,16 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HerbsCellCollectionViewCell.cellIdentifier,
                                                       for: indexPath) as! HerbsCellCollectionViewCell
         
-        let cellVM: HerbCellViewModel
+        let cellVM: Herb
         if isFiltering {
-            cellVM = viewModel.getFilteredViewModel(at: indexPath)
+            cellVM = viewModel.getFilteredCell(at: indexPath)
         } else {
-            cellVM = viewModel.getCellViewModel(at: indexPath)
+            cellVM = viewModel.getCell(at: indexPath)
         }
         
         cell.cellViewMode = cellVM
+        // forcing the text to be uppercased
+        cell.nameLabel.text = cell.nameLabel.text?.uppercased()
         
         return cell
     }
