@@ -103,7 +103,6 @@
 				55A0E49F2805CA2400658BA5 /* Network */,
 				55C840D227F6017200DB8E67 /* MainScene */,
 				55C840D327F6018700DB8E67 /* Model */,
-				5538171E27F5F27B00833334 /* Cell */,
 				557F7D7127F5E9C100A4FFA0 /* Extensions */,
 				557F7D6D27F5E6C100A4FFA0 /* Support */,
 				55E06F2427F7258000BC5909 /* DetailsScene */,
@@ -161,6 +160,7 @@
 				557F7D5B27F4DA9600A4FFA0 /* MainViewController.swift */,
 				557F7D6B27F5E15F00A4FFA0 /* MainView.swift */,
 				55B5DE8127F65747005CE137 /* MainViewViewModel.swift */,
+				5538171E27F5F27B00833334 /* Cell */,
 			);
 			path = MainScene;
 			sourceTree = "<group>";

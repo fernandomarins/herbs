@@ -34,7 +34,7 @@ class DetailsViewController: UIViewController {
     }
     
     private func setData() {
-        contentView.titleLabel.text = viewModel.herb?.name.uppercased() //herb.name.uppercased()
+        contentView.titleLabel.text = viewModel.herb?.name.uppercased()
         contentView.categoryLabel.text = viewModel.herb?.category.uppercased()
         contentView.valueScientificNameLabel.text = viewModel.herb?.scientificName
         contentView.valuePropertiesLabel.text = viewModel.herb?.properties
