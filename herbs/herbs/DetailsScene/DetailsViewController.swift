@@ -30,28 +30,24 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.fetchData { [weak self] herb in
-            DispatchQueue.main.async {
-                self?.setData(herb: herb)
-            }
-        }
+        setData()
     }
     
-    private func setData(herb: HerbCellViewModel) {
-        contentView.titleLabel.text = herb.name.uppercased()
-        contentView.categoryLabel.text = herb.category.uppercased()
-        contentView.valueScientificNameLabel.text = herb.scientificName
-        contentView.valuePropertiesLabel.text = herb.properties
-        contentView.valueDosesLabel.text = herb.doses
-        contentView.valueContraIndicationLabel.text = herb.contraIndication
+    private func setData() {
+        contentView.titleLabel.text = viewModel.herb?.name.uppercased() //herb.name.uppercased()
+        contentView.categoryLabel.text = viewModel.herb?.category.uppercased()
+        contentView.valueScientificNameLabel.text = viewModel.herb?.scientificName
+        contentView.valuePropertiesLabel.text = viewModel.herb?.properties
+        contentView.valueDosesLabel.text = viewModel.herb?.doses
+        contentView.valueContraIndicationLabel.text = viewModel.herb?.contraIndication
         
         // Boldening one part of the code
         let font = UIFont.MontSerratLight(size: 16)
         let boldFont = UIFont.MontSerratBlack(size: 16)
         let text = "ATENÇÃO" as NSString
-        contentView.functionsLabel.attributedText = herb.functions.withBoldText(boldPartsOfString: [text], font: font, boldFont: boldFont)
+        contentView.functionsLabel.attributedText = viewModel.herb?.functions.withBoldText(boldPartsOfString: [text], font: font, boldFont: boldFont)
         
-        contentView.toxicityLabel.text = herb.toxicity
+        contentView.toxicityLabel.text = viewModel.herb?.toxicity
     }
     
 }
