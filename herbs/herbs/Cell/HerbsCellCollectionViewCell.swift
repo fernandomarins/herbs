@@ -35,13 +35,14 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
         label.numberOfLines = 0
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.05
         
         return label
     }()
     
     lazy var propertiesLabel: UILabel! = {
         let label = UILabel()
-        label.font = UIFont.AdventProREgular(size: 17)
+        label.font = UIFont.AdventProRegular(size: 17)
         label.text = label.text?.uppercased()
         label.numberOfLines = 0
         label.textAlignment = .right
@@ -50,7 +51,7 @@ class HerbsCellCollectionViewCell: UICollectionViewCell {
     
     lazy var dosesLabel: UILabel! = {
         let label = UILabel()
-        label.font = UIFont.AdventProREgular(size: 16)
+        label.font = UIFont.AdventProRegular(size: 16)
         label.numberOfLines = 0
         label.textAlignment = .right
         return label
@@ -87,7 +88,7 @@ extension HerbsCellCollectionViewCell {
             $0.top.equalTo(contentView.snp.top).offset(16)
             $0.left.equalTo(contentView.snp.left).offset(16)
             $0.height.equalTo(88)
-            $0.width.equalTo(130)
+            $0.width.equalTo(140)
         }
         
         nameLabel.snp.makeConstraints {

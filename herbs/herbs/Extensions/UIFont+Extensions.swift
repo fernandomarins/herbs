@@ -24,7 +24,7 @@ extension UIFont {
         return UIFont(name: "Actor-Regular", size: size)!
     }
     
-    static func AdventProREgular(size: CGFloat) -> UIFont {
+    static func AdventProRegular(size: CGFloat) -> UIFont {
         return UIFont(name: "AdventPro-Regular", size: size)!
     }
 }
